@@ -4,6 +4,7 @@ An intelligent PowerPoint presentation generator that using LLM and web search t
 
 ## ✨ Features
 
+- **Advanced LLM Integration**: Powered by Google Gemini 2.5-flash with configurable temperature, token limits, and intelligent content generation
 - **AI-Powered Content Generation**: Uses Google Gemini LLM to create intelligent, well-structured presentations
 - **Web Search Integration**: Incorporates real-time web search results using SerpAPI for up-to-date information
 - **Auto-Fit Text Management**: Automatically adjusts text to fit PowerPoint slides perfectly
@@ -51,7 +52,7 @@ SERP_API_KEY=your_serp_api_key_here
 Generate a PowerPoint presentation on any topic:
 
 ```bash
-python main.py "Your Topic Here" --output presentation.pptx --slides 8
+python main.py "Your Topic Here"
 ```
 
 **Examples**:
@@ -66,7 +67,7 @@ python main.py "Climate Change Solutions" --output climate.pptx --slides 12
 python main.py "Digital Marketing Strategies 2024" --output marketing.pptx
 ```
 
-## 🏗️ Architecture
+## Architecture
 
 RealtyAI follows a clean, modular architecture:
 
@@ -87,11 +88,11 @@ realtyai/
 2. **AI Processing**: Google Gemini processes search results and generates structured content
 3. **PowerPoint Generation**: Creates professional presentations with auto-fit text management
 
-## 🤖 LLM Integration
+## LLM Integration
 
 RealtyAI leverages **Google Gemini** as its core AI engine for intelligent content generation. The LLM integration is designed for optimal performance and reliability.
 
-### 🧠 Google Gemini Features
+### Google Gemini Features
 
 - **Model**: Uses `gemini-2.5-flash` for fast, high-quality content generation
 - **Context-Aware**: Processes web search results to create relevant, up-to-date content
@@ -109,14 +110,14 @@ generate_content(outline, slide_number, search_context)
 enhance_content(content, context)
 ```
 
-### 📊 Content Generation Process
+### Content Generation Process
 
 1. **Topic Analysis**: Gemini analyzes the input topic and identifies key areas to cover
 2. **Search Integration**: Incorporates real-time web search results for current information
 3. **Structure Creation**: Generates logical slide progression with titles and detailed content
 4. **Content Refinement**: Ensures content fits PowerPoint format with proper bullet points
 
-### ⚙️ LLM Configuration Options
+### LLM Configuration Options
 
 ```python
 # Available settings in config.py
@@ -125,14 +126,14 @@ temperature: float = 0.7          # Creativity vs. consistency (0.0-2.0)
 max_tokens: int = 2000           # Maximum tokens per request
 ```
 
-### 🎯 Content Quality Features
+### Content Quality Features
 
 - **Contextual Relevance**: Uses search results to ensure information accuracy
 - **Professional Formatting**: Automatically structures content for business presentations
 - **Adaptive Length**: Adjusts content depth based on specified slide count
 - **Error Handling**: Robust retry mechanisms and fallback content generation
 
-### 💡 LLM Best Practices
+### LLM Best Practices
 
 The integration follows these principles:
 
@@ -141,14 +142,14 @@ The integration follows these principles:
 - **Content Validation**: Ensures generated content meets quality standards
 - **Fallback Handling**: Graceful degradation when API is unavailable
 
-### 🔄 Advanced LLM Features
+### Advanced LLM Features
 
 - **Multi-Turn Conversations**: Can refine content based on feedback
 - **Style Consistency**: Maintains consistent tone across all slides
 - **Topic Expansion**: Automatically identifies related subtopics
 - **Content Summarization**: Condenses complex information into digestible points
 
-## 🛠️ Configuration
+## Configuration
 
 The application uses Pydantic Settings for configuration management. Key settings include:
 
@@ -158,7 +159,7 @@ The application uses Pydantic Settings for configuration management. Key setting
 
 All settings can be configured via environment variables or the `.env` file.
 
-## 📋 Requirements
+## Requirements
 
 ### Core Dependencies
 - `google-generativeai`: Google Gemini LLM integration
@@ -171,73 +172,33 @@ All settings can be configured via environment variables or the `.env` file.
 ### Development Dependencies
 - `python-dotenv`: Environment variable management
 
-## 🤝 Contributing
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
-
-## 📝 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## 🔧 API Keys Setup
+## API Keys Setup
 
 ### Google AI API Key
 1. Visit [Google AI Studio](https://makersuite.google.com/app/apikey)
 2. Create a new API key
 3. Add it to your `.env` file as `GOOGLE_API_KEY`
 
-### SerpAPI Key (Optional)
+### SerpAPI Key
 1. Sign up at [SerpAPI](https://serpapi.com/)
 2. Get your API key from the dashboard
 3. Add it to your `.env` file as `SERP_API_KEY`
 
-*Note: SerpAPI is optional. Without it, the system will work with pre-defined content generation.*
 
-## 🎯 Use Cases
-
-- **Educational Presentations**: Generate lectures and training materials
-- **Business Reports**: Create professional business presentations
-- **Research Summaries**: Compile research findings into digestible slides
-- **Project Proposals**: Structure project ideas and proposals
-- **Conference Talks**: Prepare presentation content for events
-
-## 🔍 Troubleshooting
-
-### Common Issues
-
-**Missing API Keys**: Ensure your `.env` file contains valid API keys
-```env
-GOOGLE_API_KEY=your_actual_key_here
-SERP_API_KEY=your_serp_key_here
-```
-
-**Import Errors**: Make sure all dependencies are installed:
-```bash
-pip install -r requirements.txt
-```
 
 **PowerPoint Generation Issues**: Check that you have write permissions in the output directory.
 
-## 📈 Performance
+## Performance
 
 - **Generation Time**: Typically 30-60 seconds per presentation
 - **Slide Capacity**: Supports 1-50 slides per presentation
 - **Content Quality**: AI-powered content with web search integration ensures relevant, up-to-date information
 
-## 🌟 Recent Improvements
 
-- ✅ Implemented auto-fit text functionality for better slide formatting
-- ✅ Streamlined architecture by removing unnecessary complexity
-- ✅ Enhanced AI integration with better context processing
-- ✅ Improved error handling and user feedback
-- ✅ Simplified configuration management
-
----
 
 **Built with ❤️ by [Sharath Kumar MD](https://github.com/sharathkumar-md)**
-
-*RealtyAI - Transforming ideas into professional presentations with the power of AI*
