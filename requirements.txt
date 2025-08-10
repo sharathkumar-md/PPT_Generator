@@ -1,0 +1,35 @@
+# Core dependencies for RealtyAI PowerPoint Generator
+
+# Environment and configuration
+python-dotenv>=1.0.0
+pydantic-settings>=2.0.0
+
+# Gemini LLM Integration
+google-generativeai>=0.3.0
+
+# PowerPoint generation
+python-pptx>=0.6.21
+
+# Web Search and HTTP requests
+requests>=2.31.0
+beautifulsoup4>=4.12.0
+
+# Data processing and analysis
+pandas>=2.0.0
+numpy>=1.24.0
+
+# Logging and utilities
+rich>=13.0.0
+click>=8.1.0
+
+# Optional: Web scraping enhancement
+selenium>=4.15.0
+
+# Optional: Advanced text processing
+nltk>=3.8.0
+spacy>=3.7.0
+
+# Development dependencies (optional)
+pytest>=7.4.0
+black>=23.0.0
+flake8>=6.0.0
