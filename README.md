@@ -2,7 +2,7 @@
 
 An intelligent PowerPoint presentation generator that using LLM and web search to create comprehensive presentations on any topic.
 
-## ✨ Features
+## Features
 
 - **Advanced LLM Integration**: Powered by Google Gemini 2.5-flash with configurable temperature, token limits, and intelligent content generation
 - **AI-Powered Content Generation**: Uses Google Gemini LLM to create intelligent, well-structured presentations
@@ -57,7 +57,7 @@ python main.py "Your Topic Here"
 
 **Examples**:
 ```bash
-# Create a 10-slide presentation on Machine Learning
+# Create a 10-slide presentation on Machine Learning with file named ml_basics.pptx
 python main.py "Machine Learning Fundamentals" --output ml_basics.pptx --slides 10
 
 ```
