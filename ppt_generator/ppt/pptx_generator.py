@@ -1,9 +1,3 @@
-"""
-PowerPoint Builder for PPT Generator
-===================================
-
-Main class for creating PowerPoint presentations with themes and layouts.
-"""
 
 from typing import Dict, Any, Optional, List
 import logging

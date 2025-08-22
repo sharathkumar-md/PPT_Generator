@@ -1,6 +1,3 @@
-"""
-Configuration module for PPT Generator
-"""
 
 from typing import Dict, Any, Optional
 from pydantic import Field, field_validator
