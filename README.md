@@ -94,7 +94,7 @@ PPT Generator leverages **Google Gemini** as its core AI engine for intelligent 
 - **Structured Output**: Generates well-organized presentation outlines with titles, content, and bullet points
 - **Configurable Parameters**: Adjustable temperature, token limits, and generation settings
 
-### 🔧 LLM Handler Capabilities
+### LLM Handler Capabilities
 
 The `LLMHandler` class provides:
 
