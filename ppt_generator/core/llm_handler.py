@@ -1,5 +1,5 @@
 """
-LLM Handler module for RealtyAI
+LLM Handler module for PPT Generator
 Manages interactions with Google Gemini for content generation
 """
 

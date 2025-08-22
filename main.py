@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
-RealtyAI - PowerPoint Generator CLI
-==================================
+PPT Generator - PowerPoint Generator CLI
+=======================================
 
 Generate PowerPoint presentations on any topic using LLMs and web search.
 """
@@ -19,12 +19,12 @@ from rich.panel import Panel
 from rich.text import Text
 from rich import print as rprint
 
-# RealtyAI components
-from realtyai.config import get_settings, Settings
-from realtyai.core.search_engine import SearchEngine
-from realtyai.core.llm_handler import LLMHandler
-from realtyai.ppt.pptx_generator import PowerPointBuilder
-from realtyai.ppt.slide_templates import DEFAULT_THEME, DARK_THEME, get_theme
+# PPT Generator components
+from ppt_generator.config import get_settings, Settings
+from ppt_generator.core.search_engine import SearchEngine
+from ppt_generator.core.llm_handler import LLMHandler
+from ppt_generator.ppt.pptx_generator import PowerPointBuilder
+from ppt_generator.ppt.slide_templates import DEFAULT_THEME, DARK_THEME, get_theme
 
 # Initialize rich console
 console = Console()
@@ -56,7 +56,7 @@ def validate_settings() -> Settings:
 
 def display_banner():
     """Display application banner"""
-    banner = Text("RealtyAI PowerPoint Generator", style="bold blue")
+    banner = Text("PPT Generator - AI PowerPoint Creator", style="bold blue")
     subtitle = Text("Generate presentations using AI and web search", style="italic")
     
     panel = Panel.fit(

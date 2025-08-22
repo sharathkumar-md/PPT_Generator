@@ -1,6 +1,6 @@
 """
-PowerPoint Builder for RealtyAI
-==============================
+PowerPoint Builder for PPT Generator
+===================================
 
 Main class for creating PowerPoint presentations with themes and layouts.
 """

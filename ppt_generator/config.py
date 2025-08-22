@@ -1,5 +1,5 @@
 """
-Configuration module for RealtyAI
+Configuration module for PPT Generator
 """
 
 from typing import Dict, Any, Optional
@@ -8,7 +8,7 @@ from pydantic_settings import BaseSettings, SettingsConfigDict
 
 
 class Settings(BaseSettings):
-    """Configuration settings for RealtyAI"""
+    """Configuration settings for PPT Generator"""
     
     # Required API keys
     google_api_key: str = Field(..., description="Google AI API key for Gemini", alias="GOOGLE_API_KEY")

@@ -1,6 +1,6 @@
 """
-Slide Templates and Themes for RealtyAI PowerPoint Generator
-============================================================
+Slide Templates and Themes for PPT Generator
+=============================================
 
 Defines themes, layouts, and styling options for PowerPoint presentations.
 """

@@ -89,7 +89,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
-realtyai_env/
+ppt_generator_env/
 
 # Spyder project settings
 .spyderproject
@@ -126,7 +126,7 @@ ehthumbs.db
 Thumbs.db
 Desktop.ini
 
-# RealtyAI specific files
+# PPT_Generator specific files
 output/
 *.pptx
 temp/

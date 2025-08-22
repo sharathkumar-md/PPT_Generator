@@ -1,4 +1,4 @@
-# RealtyAI
+# PPT Generator
 
 An intelligent PowerPoint presentation generator that using LLM and web search to create comprehensive presentations on any topic.
 
@@ -22,8 +22,8 @@ An intelligent PowerPoint presentation generator that using LLM and web search t
 
 1. **Clone the repository**:
 ```bash
-git clone https://github.com/sharathkumar-md/RealtyAI.git
-cd RealtyAI
+git clone https://github.com/sharathkumar-md/PPT_Generator.git
+cd PPT-Generator
 ```
 
 2. **Create and activate virtual environment**:
@@ -60,19 +60,14 @@ python main.py "Your Topic Here"
 # Create a 10-slide presentation on Machine Learning
 python main.py "Machine Learning Fundamentals" --output ml_basics.pptx --slides 10
 
-# Generate a presentation about Climate Change
-python main.py "Climate Change Solutions" --output climate.pptx --slides 12
-
-# Create a business presentation
-python main.py "Digital Marketing Strategies 2024" --output marketing.pptx
 ```
 
 ## Architecture
 
-RealtyAI follows a clean, modular architecture:
+PPT Generator follows a clean, modular architecture:
 
 ```
-realtyai/
+pptgenerator/
 ├── core/                    # Core functionality
 │   ├── llm_handler.py      # Google Gemini LLM integration
 │   └── search_engine.py    # SerpAPI web search
@@ -90,7 +85,7 @@ realtyai/
 
 ## LLM Integration
 
-RealtyAI leverages **Google Gemini** as its core AI engine for intelligent content generation. The LLM integration is designed for optimal performance and reliability.
+PPT Generator leverages **Google Gemini** as its core AI engine for intelligent content generation. The LLM integration is designed for optimal performance and reliability.
 
 ### Google Gemini Features
 

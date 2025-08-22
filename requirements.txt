@@ -1,4 +1,4 @@
-# Core dependencies for RealtyAI PowerPoint Generator
+# Core dependencies for PPT Generator
 
 # Environment and configuration
 python-dotenv>=1.0.0

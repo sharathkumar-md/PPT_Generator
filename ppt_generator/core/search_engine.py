@@ -1,5 +1,5 @@
 ﻿"""
-Search Engine module for RealtyAI
+Search Engine module for PPT Generator
 Handles web search functionality using SerpAPI
 """
 
